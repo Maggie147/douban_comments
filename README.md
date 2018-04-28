@@ -11,6 +11,7 @@
 
 ## 相关库的安装: jieba、 pandas、wordcloud
 - 1、`wordcloud`词云安装可能失败 `pip install wordcloud`
+    
     解决方法：下载.whl文件 (https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud)
     ```
     pip install wordcloud-1.4.1-cp35-cp35m-win_amd64.whl
