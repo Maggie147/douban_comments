@@ -1,5 +1,5 @@
 '''
-    @File    csv handle [python3.5]
+    @File    get Douban comments [python3.5]
     @Author  tx
     @Created On 2018-04-26
     @Updated On 2018-04-28

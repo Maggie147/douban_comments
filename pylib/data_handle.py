@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-    @File    excel handle  [python3.5]
+    @File    CSV Excel handle  [python3.5]
     @Author  tx
     @Created On 2018-04-26
     @Updated On 2018-04-28
@@ -48,6 +48,21 @@ def save_data(buf, fpath, fname, ftype=None):
     except Exception as e:
         print(e)
         return False
+
+
+def get_data(fpath, fname, ftype=None):
+    try:
+        fullpath = os.path.join(fpath, fname)
+        if ftype == 'json':
+            with open(fullpath, 'r') as fjp:
+                buf = json.load(fjp)
+        else:
+            with open(fullpath, 'r') as fp:
+                buf = fp.read()
+        return buf
+    except Exception as e:
+        print(e)
+        return None
 
 
 class CSVHandle(object):
